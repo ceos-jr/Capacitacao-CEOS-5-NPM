@@ -28,7 +28,7 @@ $ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | ba
 
 Reinicie o seu terminal e teste se o NVM foi corretamente instalado digitando `nvm`.
 
-Agora, para realizar a instalção do node.js, basta digitar:
+Agora, para realizar a instalação do node.js, basta digitar:
 ```shellscript
 $ nvm install node
 ```
@@ -52,3 +52,18 @@ Para usar uma versão, utilize:
 ```shellscript
 $ nvm use 6.0.0
 ```
+
+## Usando Node.js
+
+Agora que temos tudo instalado, estamos pronto para utilizar o Node.js. Abra seu terminal e digite `node`.
+Você verá que o terminal agora apresenta um simbolo de `>`. Você pode digitar agora qualquer código javascript válido que o node executará. Teste um pouco seus conhecimentos de javascript utilizando essa interface do terminal.
+
+Escrever projetos dessa forma é algo inviável. Logo existe outra forma de executar seu código javascript com o node.js. Crie um arquivo com extensão `.js`. Por exemplo, `index.js`. Depois escreva algum código como mostra abaixo:
+
+```js
+console.log("Hello, world!");
+```
+
+Feito isso, digite em seu terminal `node index.js`. E catchau, você vai visualizar a mensagem `Hello, world!`.
+
+

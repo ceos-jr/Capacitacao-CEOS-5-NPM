@@ -5,9 +5,7 @@ Então vamos ver qual o caminho que vamos percorrer para estar capacitado a ter 
 
 1. Node.js.
 2. Gerenciador de versões do Node.js.
-3. Configurando o NPM.
-4. Iniciando projetos gerenciados pelo NPM.
-5. Scripts NPM.
-6. NPX.
-7. Criando módulos.
-8. Publicando módulos.
+3. Configurando e Iniciando o NPM.
+4. Scripts NPM.
+5. NPX. !
+6. Criando e publicando módulos.
