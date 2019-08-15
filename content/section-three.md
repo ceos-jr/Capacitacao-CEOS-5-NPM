@@ -109,3 +109,30 @@ $ source ~/.profile
 ```
 
 **Observação**: Caso você tenha instalado o node.js com o nvm, não é necessário realizar essa configuração.
+
+## Removendo bibliotecas
+
+Mais uma vez o npm salva nossas vidas quando a ideia é remover bibliotecas instaladas. Sejam elas globais ou locais.
+
+```shellscript
+$ npm uninstall -g <library>
+```
+
+```shellscript
+$ npm uninstall --save <library>
+```
+
+```shellscript
+$ npm uninstall --save-dev <library>
+```
+
+Pelas linhas de comando acima, veja que você so precisa saber como a biblioteca foi instalada. Ou seja, global, local normal ou local dependência de desenvolvedor.
+
+## GIT IGNORE
+
+NUNCA. NUNCA. NUNCA mesmo você deve mandar a pasta `node_modules` para o repositório do git. Por isso o git nos fornece uma forma de negar o versionamento de determinado arquivo ou pasta. Basta criar um arquivo `.gitignore` e adicionar os arquivos que devem ser ignorados. Existe um [repositório](https://github.com/github/gitignore) que fornece o `.gitignore` para cada tipo de linguagem. Assim, é garantido que você nunca vai enviar um arquivo especifico da linguagem que você esta trabalhando que não deve ser versionado para o github.
+
+## Instalando bibliotecas de projetos
+
+Quando você baixa em sua máquina um repositório, nele não deve vir as bibliotecas instaladas. Ou seja não deve existir uma node_modules. Mas uma das mágicas do NPM é analisar o seu `package.json`, buscar as dependências, criar uma pasta `node_modules` e colocar todas as dependências dentro dessa pasta. Logo vai estar tudo pronto para execução do projeto.
+
